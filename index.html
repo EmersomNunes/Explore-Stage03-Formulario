@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="images/IconForm.svg" type="image/x-icon">
   </head>
   <body>
     <div class="container-intro">
@@ -22,8 +23,96 @@
         <fieldset>
           <div>
             <legend>Informações Pessoais</legend>
+
+            <div class="input-user-info">
+              <div class="input-wrapper">
+                <label for="name">Nome</label>
+                <input type="text" name="name" />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="last-name">Sobrenome</label>
+                <input type="text" name="last-name" />
+              </div>
+            </div>
+
+            <div class="input-wrapper label-info">
+              <label for="email"
+                >Email <span>(digite um email válido)</span></label
+              >
+              <input type="text" name="email" id="input-email" />
+            </div>
+
+            <div class="input-wrapper label-info">
+              <label for="password"
+                >Senha <span>(mínimo de 6 caracteres)</span></label
+              >
+              <input type="password" name="password" id="input-password" />
+            </div>
           </div>
         </fieldset>
+
+        <fieldset>
+          <legend>Informações do Mentor</legend>
+          <div class="input-wrapper">
+            <label for="mentor-info"
+              >Nome do seu mentor <span>(só o primeiro nome)</span></label
+            >
+            <input type="text" name="mentor-info" id="input-info-mentor" />
+          </div>
+        </fieldset>
+
+        <div class="mentories">
+          <fieldset>
+            <div class="input-wrapper">
+              <legend>Seus horários disponivéis</legend>
+              <legend class="legend-first-mentory">Primeira mentoria</legend>
+              <div class="input-user-info">
+                <div class="input-wrapper">
+                  <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+                  <input type="date" name="date" id="input-date" />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="start">Das</label>
+                  <input type="time" name="start" id="input-start" />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="end">Até</label>
+                  <input type="time" name="end" id="input-end" />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div class="input-wrapper">
+              <legend class="legend-secont-mentory">Segunda mentoria</legend>
+              <div class="input-user-info">
+                <div class="input-wrapper">
+                  <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+                  <input type="date" name="date" id="input-date" />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="start">Das</label>
+                  <input type="time" name="start" id="input-start" />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="end">Até</label>
+                  <input type="time" name="end" id="input-end" />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="save-info">
+          <input type="submit" value="SALVAR" id="send-info" />
+        </div>
+
       </form>
     </div>
   </body>
